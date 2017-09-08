@@ -12,10 +12,6 @@ $ npm install react-native-page-control --save
 
 ![page control demo](http://silentcloud.github.io/upload/pagecontrol.gif)
 
-How to run ?  
- - git clone
- - npm install & npm start
-
 ## Example
 
 ```jsx
@@ -30,7 +26,6 @@ How to run ?
              indicatorSize={{width:8, height:8}}
              onPageIndicatorPress={this.onItemTap} />
 ```
-
 
 ## API (props)
 
