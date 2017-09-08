@@ -76,7 +76,9 @@ var PageControl = createReactClass({
         return (
           this.props.hidesForSinglePage && pages.length <= 1 ? null : <View style={[styles.container, defaultStyle, style]}>
             {pages.map((el, i) => <TouchableWithoutFeedback key={i} onPress={this.onPageIndicatorPress.bind(this, i)}>
-              <View style={i == this.props.currentPage ? currentIndicatorStyle: indicatorStyle} />
+              <View style={i == this.props.currentPage ? currentIndicatorStyle: indicatorStyle} >
+                  {this.props.indicator && this.props.indicator(i)}
+                </View>
             </TouchableWithoutFeedback>
             )}
           </View>
